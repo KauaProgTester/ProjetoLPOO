@@ -11,10 +11,10 @@ import corpo.Jogador;
 
 public class GamePanel extends JPanel implements Runnable{
     // Screen Settings
-    final int originalTileSize = 16; // 16x16
-    final int scale = 3;
+    public final int originalTileSize = 16; // 16x16
+    public final int scale = 3;
 
-    final int tileSize = originalTileSize * scale;
+    public final int tileSize = originalTileSize * scale;
     
     final int maxScreenCol = 16;
     final int maxScreenRow = 12;
@@ -125,25 +125,15 @@ public class GamePanel extends JPanel implements Runnable{
     }
     public void update (){
 
-        if (keyH.upPressed == true){
-            playerY -= playerSpeed;
-        }
-        else if (keyH.downPressed == true) {
-            playerY += playerSpeed;
-            
-        }
-        else if (keyH.leftPressed == true){
-            playerX -= playerSpeed;
-        }
-        else if (keyH.rightPressed == true){
-            playerX += playerSpeed;
-        }
+
 
     }
     public void paintComponent(Graphics g){
         super.paintComponent(g);
 
         Graphics2D g2 = (Graphics2D)g;
+
+        Jogador.draw(g2);
 
         g2.setColor(Color.white);
 
@@ -154,9 +144,3 @@ public class GamePanel extends JPanel implements Runnable{
 
     }
 }
-
-    }
-}
-
-
-
