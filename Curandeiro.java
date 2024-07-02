@@ -2,7 +2,7 @@ package src.personagens;
 
 public class Curandeiro extends Personagem {
 
-    public Guerreiro(String nome, int vida, String classe, int defesa, 
+    public Curandeiro(String nome, int vida, String classe, int defesa, 
     int nivel, int mana, Inventario inventario, Armadura armadura) {
         
         super(nome, vida, 2, classe, defesa, nivel, mana, inventario, armadura);        
