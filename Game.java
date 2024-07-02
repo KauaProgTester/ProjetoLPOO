@@ -2,17 +2,15 @@ package src;
 
 import javax.swing.JFrame;
 
-public class Main {
-    public static void main (String[] args) {
-
+public class Game {
+    public Game() {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("Guardiões das Lendas Antigas");
+        window.setTitle("2D RPG Game");
 
         GamePanel gamePanel = new GamePanel();
-        window.add(gamePanel); 
-
+        window.add(gamePanel);
         window.pack();
 
         window.setLocationRelativeTo(null);
@@ -20,5 +18,4 @@ public class Main {
 
         gamePanel.startGameThread();
     }
-
 }
