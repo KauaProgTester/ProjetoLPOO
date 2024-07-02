@@ -1,18 +1,19 @@
 package src.personagens;
 
 public class Inimigo extends Personagem {
-    public Inimigo(String nome, int nivel, int saude, int mana) {
-        super(nome, nivel, saude, mana);
+    public Inimigo(String nome, int vida, String classe, int defesa, 
+    int nivel, int mana, Inventario inventario, Armadura armadura) {
+        
+        super(nome, vida, 1, classe, defesa, nivel, mana, inventario, armadura);        
+
     }
 
-    @Override
     public void atacar(Personagem alvo) {
         int dano = 10;
-        alvo.setSaude(alvo.getSaude() - dano);
+        alvo.setVida(alvo.getVida() - dano);
         System.out.println(getNome() + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
     }
 
-    @Override
     public void defender() {
         System.out.println(getNome() + " se defendeu.");
     }
