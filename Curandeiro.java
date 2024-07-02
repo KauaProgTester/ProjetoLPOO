@@ -2,14 +2,16 @@ package src.personagens;
 
 public class Curandeiro extends Personagem {
 
-    public Curandeiro(String nome, int nivel, int saude, int mana) {
-        super(nome, nivel, saude, mana);
+    public Guerreiro(String nome, int vida, String classe, int defesa, 
+    int nivel, int mana, Inventario inventario, Armadura armadura) {
+        
+        super(nome, vida, 2, classe, defesa, nivel, mana, inventario, armadura);        
+
     }
 
-    @Override
     public void atacar(Personagem alvo) {
         int dano = 5; // Amostra do dano (amostrar serão revistas)
-        alvo.setSaude(alvo.getSaude() - dano);
+        alvo.setVida(alvo.getVida() - dano);
         System.out.println(getNome() + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
     }
 
@@ -20,8 +22,8 @@ public class Curandeiro extends Personagem {
 
     public void curar(Personagem alvo) {
         int cura = 15; // Amostra da cura
-        alvo.setSaude(alvo.getSaude() + cura);
-        System.out.println(getNome() + " curou " + alvo.getNome() + " restaurando " + cura + " de saúde.");
+        alvo.setVida(alvo.getVida() + cura);
+        System.out.println(getNome() + " curou " + alvo.getNome() + " restaurando " + cura + " de Vida.");
     }
  
 }
