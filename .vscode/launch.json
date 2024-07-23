@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SimpleMap",
+            "request": "launch",
+            "mainClass": "gamejava.Mapa",
+            "projectName": "LPOO_e15d5a9f"
+        },
+        {
+            "type": "java",
+            "name": "Mapa",
+            "request": "launch",
+            "mainClass": "gamejava.Mapa",
+            "projectName": "LPOO_e15d5a9f"
+        },
+        {
+            "type": "java",
+            "name": "Mapa",
+            "request": "launch",
+            "mainClass": "gamejava.Mapa",
+            "projectName": "LPOO_e15d5a9f"
+        },
+        {
+            "type": "java",
+            "name": "Debug JavaFX",
+            "request": "launch",
+            "mainClass": "gamejava.Mapa",
+            "vmArgs": "--module-path C:/Users/ABJ01/Desktop/javafx-sdk-22.0.2/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
