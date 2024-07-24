@@ -10,7 +10,7 @@ public class CaixaDeColisao {
         this.height = height;
     }
 
-    public boolean intersects(CaixaDeColisao outra) {
+    public boolean encosta(CaixaDeColisao outra) {
         return (this.x < outra.x + outra.width &&
                 this.x + this.width > outra.x &&
                 this.y < outra.y + outra.height &&
