@@ -17,4 +17,3 @@ public class Armadura extends Item{
         this.aumentoDefesa = aumentoDefesa;
     }
     
-}
