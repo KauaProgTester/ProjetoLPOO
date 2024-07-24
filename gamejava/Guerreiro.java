@@ -5,7 +5,7 @@ public class Guerreiro extends Personagem {
     private Espada espadaEquipada; 
 
     public Guerreiro(String nome, Inventario inventario, Armadura armadura, double x, double y) {
-        super(nome, 100, 15, "Guerreiro", 5, 1, 100, inventario, armadura, x, y);
+        super(nome, 130, 15, "Guerreiro", 5, 1, 100, inventario, armadura, x, y);
     }
 
     public void equiparEspada(Espada espada) {

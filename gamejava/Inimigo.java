@@ -58,7 +58,7 @@ public class Inimigo {
 
     public void receberDano(double dano) {
         this.vidaInimigo = this.vidaInimigo - dano;
-        if (this.vidaInimigo < 0) {
+        if (this.vidaInimigo <= 0) {
             this.vidaInimigo = 0;
             morrer();
         }

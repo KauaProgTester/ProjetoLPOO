@@ -2,8 +2,6 @@ package gamejava;
 
 import java.util.ArrayList;
 import java.util.List;
-import javafx.scene.image.Image;
-import javafx.scene.canvas.GraphicsContext;
 
 public abstract class Personagem {
     private String nome;
@@ -36,7 +34,7 @@ public abstract class Personagem {
 
     public void receberDano(int dano) {
         this.vida -= dano;
-        if (this.vida < 0) {
+        if (this.vida <= 0) {
             this.vida = 0;
             morrer();
         }
@@ -125,6 +123,11 @@ public abstract class Personagem {
         this.y = y;
     }
 
+    public void setPosicao(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    
     public void mover(double dx, double dy) {
         this.x += dx;
         this.y += dy;
