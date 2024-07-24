@@ -1,0 +1,12 @@
+Estratégia para zerar:
+
+Mate o ladrão no meio do mapa
+Mate o guarda e, só depois, mate o chefe.
+Após matar os 3, encaminhe-se para a porta do castelo
+
+
+Sobre a execução do jogo:
+javafx necessario
+Aqui no meu notebook funciona com as pastas .vscode, lib e gamejava uma em cima da outra no VSCODE, apertando "run" na  função Main da classe Mapa. Entretanto, já tive
+alguns problemas por conta das configurações do json, então não sei como funcionaria
+aí.
